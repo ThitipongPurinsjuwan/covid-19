@@ -1,0 +1,206 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 40px 100px;
+  z-index: 1000;
+}
+
+header p {
+  color: white;
+}
+
+#online {
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 1);
+}
+header p span {
+  width: 12px;
+  height: 12px;
+  background: #ea5771;
+  border-radius: 50%;
+  margin-right: 15px;
+  box-shadow: 0 5px 35px rgba(0, 0, 0, 1);
+  /* position: absolute; */
+  /* right: 22em;
+  top: 5px; */
+  /* animation: onlone 2s infinite linear; */
+}
+@keyframes online {
+  0% {
+    box-shadow: 0 0 5px #ea5771, 0 0 25px #ea5771, 0 0 50px #ea5771,
+      0 0 200px #ea5771;
+  }
+  100% {
+    box-shadow: 0 0 5px #ea5771, 0 0 25px #ea5771, 0 0 50px #ea5771,
+      0 0 200px #ea5771;
+  }
+}
+
+header .date {
+  letter-spacing: 0.8px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+}
+.banner {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 0 100px;
+  background: #111;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.banner::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 400px;
+  height: 100%;
+  background: #2a2a2c;
+  transform-origin: top;
+  transform: skewX(-25deg);
+  opacity: 0.5;
+  z-index: 1;
+}
+.banner video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  opacity: 0.2;
+  pointer-events: none;
+}
+.banner .textBox {
+  position: relative;
+  max-width: 600px;
+  font-size: 25px;
+  left: 36px;
+  z-index: 2;
+}
+.banner .textBox .virus1 {
+  position: absolute;
+  bottom: 25px;
+  left: -40px;
+}
+.banner .textBox .virus2 {
+  position: absolute;
+  top: 20px;
+  right: -40px;
+}
+
+.banner .textBox h3 {
+  color: white;
+  font-size: 26px;
+  letter-spacing: 1px;
+  margin-bottom: 6px;
+}
+.banner .textBox h1 {
+  color: #ea5771;
+  font-size: 4em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 16px 0;
+}
+.banner .statusBox {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  z-index: 3;
+  right: 80px;
+}
+.banner .statusBox .row {
+  position: relative;
+  display: flex;
+  width: 100%;
+}
+.banner .statusBox .row .col {
+  display: flex;
+  margin: 5px;
+  padding: 5px;
+}
+.confirmed {
+  display: flex;
+  border-radius: 10px;
+  background: #ea5771;
+  color: white;
+  padding: 20px 20px;
+}
+.confirmed .left {
+  display: flex;
+  flex-direction: column;
+}
+.confirmed .left h3 {
+  font-size: 18px;
+  font-weight: 100;
+  margin-bottom: 15px;
+}
+.increase {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 200px;
+  padding: 0px 10px;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  color: black;
+  letter-spacing: 1px;
+}
+.increase .arrow {
+  display: flex;
+}
+.increase .arrow p {
+  margin-left: 5px;
+}
+.increase h2 {
+  font-size: 46px;
+}
+.confirmed .right {
+  display: flex;
+  padding: 5px 15px;
+  justify-content: center;
+  align-items: center;
+}
+.confirmed .right h3 {
+  font-size: 68px;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+.hospitalized {
+  background: #ffc700;
+}
+.sub-title {
+  font-size: 16px;
+  font-weight: 300;
+}
+.num-count {
+  font-size: 48px;
+  font-weight: 500;
+}
+.recover {
+  background: #039245;
+  color: white;
+}
+.deaths {
+  background: #d22d36;
+  color: white;
+}
+.card-col {
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+}
