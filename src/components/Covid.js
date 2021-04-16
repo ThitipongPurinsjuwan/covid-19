@@ -8,13 +8,15 @@ export default class Covid extends Component {
     return (
       <>
         <header>
-          <p className="date">
-            <span id="online"></span>อัปเดตล่าสุด {data.UpdateDate}
-          </p>
+          <div className="pointStatus"></div>
+          <p className="date">อัปเดตล่าสุด {data.UpdateDate}</p>
         </header>
         <div className="banner">
           <video autoPlay loop>
-            <source src="/video/covid.mp4" type="video/mp4" />
+            <source
+              src="https://61103776.000webhostapp.com/covid.mp4"
+              type="video/mp4"
+            />
           </video>
           <div className="textBox">
             <Virus className="virus1" color="#EA5771" size="28" />

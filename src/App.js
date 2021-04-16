@@ -13,7 +13,7 @@ export default class App extends Component {
     };
   }
   componentDidMount() {
-    var self = this;
+    // var self = this;
     this.setState({ name: "g" });
     // axios.get("https://covid19.th-stat.com/api/open/today").then(
     //   function (res) {
